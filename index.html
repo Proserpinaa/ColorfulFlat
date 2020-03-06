@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8">
+        <title>Advanced Project</title>
+        <meta name="description" content="Copy of given template">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <section class="first">
+            <header>
+                <div class="logo">
+                    <i class="fa fa-heart"></i>
+                    <p>COLORFUL FLAT</p>
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></lI></lo>
+                </ul>
+            </header>
+            <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="img/Img1.png" style="width:100%"/>
+                </div>
+            
+                <div class="mySlides fade">
+                    <img src="img/img2.png" style="width:100%"/>
+                </div>
+            
+                <div class="mySlides fade">
+                    <img src="img/img3.png" style="width:100%"/>
+                </div>
+            </div>
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>    
+            <script>
+                var slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 4000); // Change image every 4 seconds
+                }
+                </script>
+        </section>
+
+        <section class="second">
+            <div class="box left">
+                <img src="img/mac icon.png" alt="mac icon"/>
+                <h3>Flat Design</h3>
+                <h4>This design is perfect to display all the essential
+information right where you want it in the format that is specific to your needs.</h4>
+            </div>
+            <div class="box">
+                <img src="img/bulb.png" alt="lightbulb"/>
+                <h3>Great Ideas</h3>
+                <h4>Here you can display the ideas to others, keep your ming open for 
+new ideas and suggestions, and create the environment to discuss these ideas.</h4>
+            </div>
+            <div class="box right">
+                <img src="img/window.png" alt="browser"/>
+                <h3>Browser Compatibility</h3>
+                <h4>This theme is compatible with any browser, whether it's open on pc,
+laptop, tablet or smartphone. We took care of it for you, so you can concentrate on ideas 
+rather than problems.</h4>
+            </div>
+        </section>
+
+        <section class="third">
+            <h1>RECENT WORKS</h1>
+            <h4>Here you can display your best work to visually engage outhers and 
+showcase what you got. Use the space wisely.</h4>
+            <ul>
+                <li><a href="#">ALL</a></li>
+                <li class="web"><a href="#">WEB</a></li>
+                <li><a href="#">MOBILE</a></li>
+                <li><a href="#">PHOTOGRAPHY</a></li>
+                <li><a href="#">DESIGN</a></li>
+                <li><a href="#">TYPE</a></li>
+            </ul>
+            <div class="collection">
+                <div class="line1">
+                    <img src="img/scooby.jpeg" alt="img 1"/>
+                    <img src="img/snoopy.jpeg" alt="img 2"/>
+                    <img src="img/brian.jpeg" alt="img 3"/>
+                </div>
+                <div class="line2">
+                    <img src="img/dalmatians.jpeg" alt="img 4"/>
+                    <img src="img/droopy.jpeg" alt="img 5"/>
+                    <img src="img/hector.png" alt="img 6"/>
+                </div>
+            </div>
+            <div><button href="#">Show More</button></div>   
+        </section>
+
+        <section id= "fourth">
+            <div class="neatly1">
+                <img src="img/window2.png" alt="window">
+                <h3>Layered Neatly Photoshop Template</h3>
+                <p>Thanks to defined hierarchy of given template you have total 
+control and possibility to add/modify/manage all content on your page. Thanks to embedded 
+Photoshop elements, photos/images are the breese to modify the way you like it.</p>
+                <button>SHOW MORE</button>
+            </div>
+            <hr>
+            <div class= "neatly2">
+                <img src="img/window2.png" alt="window">
+                <h3>Layered Neatly Photoshop Template</h3>
+                <p>Thanks to defined hierarchy of given template you have total 
+control and possibility to add/modify/manage all content on your page. Thanks to embedded 
+Photoshop elements, photos/images are the breese to modify the way you like it.</p>
+                <button>SHOW MORE</button>
+            </div>
+        </section>
+
+        <section id="team">
+            <h1>MEET OUR TEAM</h1>
+            <h4>Thanks to these people you see this template. Their hard work and creativity brought 
+you this great example of how your website might be.</h4>
+            <div class="members">
+                <div class="jon">
+                    <img src="img/john.jpeg" alt="John">
+                    <h2>JOHN SMITH</h2>
+                    <h3>Creative Director</h3>
+                    <h5>The idea generator and leader of out team. Thanks to his hard work and support 
+many projects have seen their completion. Good cheer up is always accounted for as well. </h5>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-pinterest"></i>
+                </div>
+                <div class="jon">
+                    <img src="img/john.jpeg" alt="John">
+                    <h2>JOHN SMITH</h2>
+                    <h3>Creative Director</h3>
+                    <h5>The idea generator and leader of out team.Thanks to his hard work and support 
+                        many projects have seen their completion. Good cheer up is always accounted for as well.</h5>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-pinterest"></i>
+                </div>
+                <div class="jon">
+                    <img src="img/john.jpeg" alt="John">
+                    <h2>JOHN SMITH</h2>
+                    <h3>Creative Director</h3>
+                    <h5>The idea generator and leader of out team.Thanks to his hard work and support 
+                        many projects have seen their completion. Good cheer up is always accounted for as well.</h5>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-pinterest"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="posts">
+            <h1>RECENT POSTS</h1>
+            <h4>Here are links to your recent posts. Just click to expand.</h4>
+            <div class="recents">
+                <div class="box2">
+                    <img src="img/pointer.jpg" alt="img">
+                    <h3>Really interesting post</h3>
+                    <h5>Date here</h5>
+                    <p>Some really interesting text with details about the event. Might 
+    be participation in some event, maybe we did party for everybody, or just some interesting 
+    day-to-day interaction. Who knows, just read on...</p>
+                </div>
+                <div class="box2">
+                    <img src="img/pointer.jpg" alt="img">
+                    <h3>Really interesting post</h3>
+                    <h5>Date here</h5>
+                    <p>Some really interesting text with details about the event. Might 
+    be participation in some event, maybe we did party for everybody, or just some interesting 
+    day-to-day interaction. Who knows, just read on...</p>
+                </div>
+                <div class="box2">
+                    <img src="img/pointer.jpg" alt="img">
+                    <h3>Really interesting post</h3>
+                    <h5>Date here</h5>
+                    <p>Some really interesting text with details about the event. Might 
+    be participation in some event, maybe we did party for everybody, or just some interesting 
+    day-to-day interaction. Who knows, just read on...</p>
+                </div>
+            </div>
+            <button class="more" href="#">SHOW MORE</button>
+        </section>
+
+        <footer>
+            <div id="contact">
+                <h3>CONTACT US</h3>
+                <h4>Use this form to send us suggestions, critique, or just your admiration. 
+We appreciate any help we can get in improving this template. Thank you!</h4>
+                <form>
+                    <input type="text" placeholder="Name:">
+                    <input type="email" placeholder="Email:">
+                    <textarea rows="5" placeholder="Message:"></textarea>
+                    <button class="show" type="button">SHOW MORE</button>
+                </form>
+            </div>
+            <hr class="two">
+            <div class="bottom">
+                <div class="socialmedia">
+                    <a href="#">
+                        <i class="fa fa-twitter icon"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-facebook icon"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-html5 icon"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-flickr icon"></i>
+                    </a>
+                </div>
+                <div>
+                    <h6>Bloom Web Design <span>Copyright &copy; 2013 powered by</span> WordPress</h6>
+                </div>   
+            </div> 
+        </footer>
+    </body>
+</html>

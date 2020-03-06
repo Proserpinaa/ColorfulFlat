@@ -1,0 +1,458 @@
+.first {
+    background-color:rgb(151, 212, 212);
+}
+
+header {
+    padding: 10px;
+    margin: 0px;
+}
+
+header p {
+    padding-top: 10px;
+    font: bold; 
+}
+
+.logo {
+    display:inline-flex;
+    font-size: 20px;
+    padding-left: 250px;
+}
+
+.fa-heart {
+    color:black;
+    padding-top: 30px;
+    padding-right: 5px;
+}
+
+header ul {
+    float: right;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-right: 200px;
+}
+
+header li {
+    display: inline-block;
+    padding: 15px;
+    color: black;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover{
+    background-color: black;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+}
+
+.slideshow-container  {box-sizing: border-box;}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color:black;
+    border: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: white;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.second {
+    display: flex;
+    text-align: center;
+    padding: 50px;
+}
+
+.second img {
+    height: 150px;
+    width: 150px;
+}
+
+.second h3 h4{
+    padding: 20px;
+}
+
+.second h4 {
+    font-size: 12px;
+}
+
+.box {
+    margin: 0 0;
+    padding: 0 4%;
+}
+
+.left {
+    padding-left: 200px;
+}
+
+.right {
+    padding-right: 100px;
+}
+
+.third {
+    background-color: rgb(139, 223, 176);
+    text-align: center;
+}
+
+.third h1{
+    color: white;
+    padding: 20px 0 0 0;
+
+}
+
+.third h4 {
+    color: white;
+    font-size: 12px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
+.third li {
+    display: inline-block;
+    padding: 15px;
+    color: black;
+}
+
+.third .web {
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.third ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.third ul a:hover {
+    background-color: white;
+    color: rgb(139, 223, 176);
+    padding: 0.5em 1em;
+    border-radius: 8px;
+}
+
+.third .web a:hover {
+    background-color: rgb(139, 223, 176);
+    color: white;
+    padding: none;
+}
+
+.collection img {
+    height: 200px;
+    width: 270px;
+    margin: 20px;
+}
+
+.third {
+    padding-bottom: 7%;
+}
+.line1 .line2{
+    display: inline-flex;
+    justify-content: center;
+}
+
+.line2 {
+    padding-bottom: 2%;
+}
+
+.third button {
+    padding: 20px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.third button:hover,
+.third button:focus {
+    color: rgb(139, 223, 176);
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+}
+
+#fourth {
+    background-color: rgb(228, 222, 222);
+    position: relative;
+    padding: 10px 200px 0 200px;
+    height: 500px;
+}
+
+.neatly1 img{
+    float: left;
+    padding: 0;
+}
+
+.neatly1,
+.neatly2 {
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+.neatly1 h3 {
+    padding: 40px 0 0 0;
+}
+
+.neatly1 p {
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.neatly1 button {
+    padding: 15px;
+    background: rgb(139, 223, 176);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+} 
+
+.neatly2 {
+    padding-left: 30px;
+}
+
+.neatly2 img {
+    float: right;
+}
+
+.neatly2 h3{
+    padding-top: 40px;
+}
+
+.neatly2 p {
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.neatly2 button {
+    padding: 15px;
+    background: rgb(139, 213, 223);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+#team {
+    background-color: rgb(219, 166, 175);
+    padding: 10px;
+}
+
+#team h1 {
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    font-size: 26px;
+}
+
+#team h4 {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+.members {
+    display: flex;
+    justify-content: center;
+    height: 550px;
+}
+
+.jon {
+    padding: 0px;
+    height: 425px;
+    width: 260px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid rgb(185, 183, 183);
+    margin: 50px;
+}
+
+.jon h2, h3, h5{
+    margin: 7px;
+}
+
+.fa-facebook {
+    padding: 3px 7px 3px 7px;
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+}
+
+.fa-twitter {
+    padding: 3px;
+    background-color: rgb(63, 173, 236);
+    color: white;
+    border-radius: 50%;
+}
+
+.fa-pinterest {
+    padding: 3px 4px 3px 4px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+}
+
+#posts {
+    background-color: rgb(152, 206, 223);
+    padding: 10px;
+    text-align: center;
+    height: 670px;
+}
+
+#posts h1 {
+    color: white;
+    padding-top: 20px;
+    font-size: 26px;
+}
+
+#posts h4 {
+    color: white;
+    font-size: 12px;
+}
+
+.box2 {
+    padding: 0px;
+    height: 350px;
+    width: 260px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid rgb(185, 183, 183);
+    margin: 50px 50px 0px 50px;
+}
+
+.recents {
+    display: flex;
+    justify-content: center;
+} 
+
+.more {
+    margin: 50px;
+    padding: 20px;
+    color: rgb(152, 206, 223);
+    border-radius: 8px;
+}
+
+footer {
+    background-color: rgb(46, 46, 46);
+    text-align: center;
+    padding: 30px;
+}
+
+#contact h3 {
+    color: white;
+    padding-top: 20px;
+    font-size: 26px;
+}
+
+#contact h4 {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+form input, 
+textarea {
+    width: 300px;
+    border-radius: 5px;
+}
+
+form {
+    width: 30%;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+form > input, 
+form > textarea {
+    margin: 5px auto;
+    padding: 7px;
+}
+
+.show {
+    margin: 50px;
+    padding: 20px 30px 20px 30px;
+    color: black;
+    border-radius: 8px;
+}
+
+.two {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 60%;
+    border-color: black;
+}
+
+.bottom {
+    display: inline-flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.icon {
+    padding: 5px;
+    background-color: rgb(85, 83, 83);
+    border-radius: 50%;
+    color: rgb(46, 46, 46);
+}
+
+.socialmedia {
+    padding: 0 370px 0 20px;
+}
+
+.bottom h6 {
+    color: rgb(206, 206, 15);
+}
+
+span {
+    color: grey;
+}
